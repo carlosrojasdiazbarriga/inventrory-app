@@ -26,7 +26,7 @@ export const InputCSV = ({scandata}) => {
 
     
     useEffect(() => {
-        console.log(scandata);
+        // console.log(scandata);
         handleChange(scandata);
     },[scandata])
 
@@ -66,7 +66,7 @@ export const InputCSV = ({scandata}) => {
         accept=".csv,.xlsx,.xls"
         onChange={(e) => {
           const files = e.target.files[0];
-          console.log(files);
+        //   console.log(files);
           if (files) {
                 handleCSVFile(files);
             }

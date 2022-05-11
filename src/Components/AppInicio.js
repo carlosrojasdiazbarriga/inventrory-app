@@ -19,15 +19,19 @@ export const AppInicio = () => {
 
             <h1>Administrador Inventario</h1>
             <hr/>
+        </div>
             <div className="row g-0 ">
 
-                <div className="col-xs-8  col-md-6 col-lg-7">
+                <div className="card-body col-xs-8  col-md-6 col-lg-7">
                     <InputCSV scandata={scanData}/>
                 </div>
-                <div className="col-xs-8 col-md-5 col-lg-5">
+                <div className="card-body  col-xs-8 col-md-5 col-lg-5">
                     <QrLector func={pull_data}/>
                 </div>
             </div>
+
+        <div className="card-footer text-center text-muted">
+            <h4>Carlos Rojas Diaz Barriga </h4>
         </div>
     </div>
   )
